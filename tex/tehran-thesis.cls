@@ -137,7 +137,7 @@
 % بعد از آرم‌ها
 \centering
 \vskip 1.5cm
-{\huge\titlefont\bfseries \@title}\par
+{\titlefont\bfseries \@title}\par
 \vskip 5mm
 \if@bscthesis 
 	{\large\bfseries{پروژهٔ کارشناسی \@subject}
@@ -178,9 +178,9 @@
 \par
 {\Large\bfseries \@firstsupervisor{} و \@secondsupervisor}
 \fi\fi}\vskip 6mm
-%\vfill
-% {\large \@thesisdate}
-%\vfill
+\vfill
+{\large \@thesisdate}
+\vfill
 \end{titlepage}%
 } % end of coverPage
 %% چکیده فارسی
