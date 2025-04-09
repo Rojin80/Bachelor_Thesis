@@ -1,0 +1,24 @@
+% ابتدای درج صفحات مختلف
+
+% بررسی حالت پیش‌نویس
+\ifoptiondraft{}{% 
+    \besmPage
+    \titlePage
+    \davaranPage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \esalatPage
+    \mojavezPage
+% چنانچه مایل به چاپ صفحات «تقدیم»، «نیایش» و «سپاس‌گزاری» در خروجی نیستید، خط‌های زیر را با گذاشتن ٪  در ابتدای آنها غیرفعال کنید.
+
+} % end ifoptiondraft
+
+% شروع درج فهرست‌ها
+
+\pagenumbering{harfi} % آ، ب، ...
+\tableofcontents \clearpage
+% بررسی حالت پیش‌نویس برای بقیه فهرست‌ها
+\ifoptiondraft{
+    \listoftodos
+}{%
+
+} % end ifoptiondraft
